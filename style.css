@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+background-color: #8eecf5;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1050px;
+    min-height: 1000px;
+    margin: 50px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.5);
+}
+.container .leftSide
+{
+    position: relative;
+    background: #003147;
+    padding:40px;
+}
+.container .rightSide
+{
+    position: relative;
+    background: #fff;
+    padding:40px;
+}
+.container .leftSide .profileText .imgBox .resim{
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    
+}
+
+.profileText .imgBox
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText h2{
+    margin-top: 20px;
+    text-align: center;
+    color: #fefae0;
+    font-size: 1.12em;
+    font-weight: 600;
+}
+.profileText h2 span{
+    font-size: 1em;
+    font-weight: 200;
+}
+
+.contact{
+    padding-top: 50px ;
+    
+}
+.contactTitle{
+    color: #fefae0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.contact ul li{
+    position: relative;
+    list-style: none;
+    margin: 25px 0;
+    cursor: pointer;
+}
+.contact ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contact ul li span{
+    color: #fff;
+    font-weight: 300;
+
+}
+.educationTitle{
+    color: #fefae0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.education ul{
+    color: gold;
+}
+.education ul li{
+    margin-bottom: 25px;
+}
+
+.education ul h5{
+    color: #03a9f4;
+    font-weight: 500;
+}
+.education ul h4{
+
+    color: #fff;
+    font-weight: 300;
+}
+
+/* Righ Side Codes */
+
+ /* Profile codes */
+
+.about
+{
+    margin-top: -40px;
+    margin-bottom: 60px;
+} 
+.about:last-child
+{
+    margin-bottom: 0;
+}
+.title2
+{
+    color: #003147;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.title2 p
+{
+    color: #333;
+}
+.about .box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .yearCompany
+{
+    min-width: 150px; 
+    margin-top: 55px;
+    margin-left: 5px;
+}
+.about .box .yearCompany h5
+{
+    color: #848c90;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.about .box .text h4
+{
+    color: #2a7da2;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+.about .read h4
+{
+    color: #003147;
+    text-align: center;
+}
+.skills .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skills .box h4
+{
+    color: #848c90;
+    font-weight: 600;
+}
+.skills .box .percent
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #f0f0f0;
+}
+.skills .box .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #03a9f4;
+}
+.lang_int
+{
+    display: flex; 
+    position: relative;
+
+}
+.lang_int .language
+{
+    
+    margin-right: 100px;
+    margin-left: 50px;
+    padding-right: 80px;
+    border-right: 2px solid #03a9f4;
+}
+.lang_int .language ul li
+{
+    font-weight: 300;
+    list-style: none;
+    margin: 15px 0;
+    
+    
+}
+.lang_int .interest
+{
+    margin-left: -25px;
+}
+.lang_int .interest ul li
+{   
+    color: #333;
+    font-weight: 600;
+    list-style: none;
+    margin: 15px 0;
+}
+.lang_int .interest ul li .icon
+{
+    color: #03a9f4;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.lang_int .language ul li h4{
+   
+    color: #333;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    
+    
+}
+.lang_int .language ul li img
+{
+    display: inline-block;
+    margin-top: 5px ;
+    margin-left: -15px;
+    margin-right: 15px;
+    height: 26px;
+    width: 26px;
+}
+.lang_int .language ul li .eng
+{
+    height: 30px;
+}
